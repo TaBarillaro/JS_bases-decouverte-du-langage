@@ -1,6 +1,8 @@
 // you can write js here
 console.log('exo-2');
 
+let isTesting = true;
+
 const myDate = new Date();
 
 const dayOfTheWeek = 'We are in the week.';
@@ -24,3 +26,14 @@ message = (currentDay === 0 || currentDay === 6 || (currentDay === 5 && currentT
 // une nouvelle condition si nous sommes un lundi avant 9h, afficher le message du weekend
 
 message = (currentDay === 0 || currentDay === 6 || (currentDay === 5 && currentTime >= 17) || (currentDay === 1 && currentTime < 9)) ? weekend : dayOfTheWeek;
+
+// testing
+// je crée une variable now in witch I test two values: a chosen date or current time
+let now = isTesting ? new Date('01-11-2025 12:12:12') : new Date();
+console.log(now);
+currentDay = now.getDay();
+console.log(currentDay);
+currentTime = now.getHours();
+// Je crée à nouveau la condition pour vérifier dans les deux cas(isTesting = true et isTesting = false) si on est dans le weekend ou pas
+message = (currentDay === 0 || currentDay === 6 || (currentDay === 5 && currentTime >= 17) || (currentDay === 1 && currentTime < 9)) ? weekend : dayOfTheWeek;
+console.log(message);
