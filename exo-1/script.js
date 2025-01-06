@@ -1,7 +1,7 @@
 // you can write js here
-console.log('hello from file');
+var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");
 
-let kelvins = 294;
+// let kelvins = 294;
 
 // I convert kelvins degrees into celsius degrees
 let celsius = kelvins - 273;
