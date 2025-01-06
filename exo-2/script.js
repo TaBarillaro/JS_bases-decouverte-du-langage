@@ -20,3 +20,7 @@ let currentTime = myDate.getHours();
 console.log(currentTime);
 
 message = (currentDay === 0 || currentDay === 6 || (currentDay === 5 && currentTime >= 17)) ? weekend : dayOfTheWeek;
+
+// une nouvelle condition si nous sommes un lundi avant 9h, afficher le message du weekend
+
+message = (currentDay === 0 || currentDay === 6 || (currentDay === 5 && currentTime >= 17) || (currentDay === 1 && currentTime < 9)) ? weekend : dayOfTheWeek;
