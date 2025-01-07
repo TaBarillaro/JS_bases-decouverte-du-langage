@@ -8,5 +8,8 @@ var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily
 secretMessage.pop();
 console.log(secretMessage);
 
+// 2.Utiliser une méthode pour ajouter les mots 'to' and 'program' comme des éléments distincts à la fin du tableau
+secretMessage.push('to', 'program');
+console.log(secretMessage);
 
 
