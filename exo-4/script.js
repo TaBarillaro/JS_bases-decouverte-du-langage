@@ -27,3 +27,7 @@ console.log(secretMessage);
 // 6.Utiliser une méthode pour remplacer la série de cinq mots : 'get', 'right', 'the', 'first', 'time' par un seul mot : 'know'
 secretMessage.splice(5, 5, 'know');
 console.log(secretMessage);
+
+// 7.Utiliser la méthode .join pour afficher le message secret dans la console
+console.log(secretMessage.join(' '));
+
