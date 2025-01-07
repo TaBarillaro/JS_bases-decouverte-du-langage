@@ -9,9 +9,12 @@ function getPlayerChoice(playerInput) {
     // 3.je transform la variable pour l'avoir en minuscule
     playerInput.toLowerCase();
 
+    // 4.condition pour vérifier la choix des joueurs
     let playerChoise;
     if (playerChoise === "rock" || playerChoise === "paper" || playerChoise === "scissor") {
-        
+        return playerInput;
+    } else {
+        console.log('Error: You must choice between rock, paper or scissor');
     }
 }
 
