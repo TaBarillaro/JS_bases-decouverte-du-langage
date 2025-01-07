@@ -30,8 +30,13 @@ for (let i = 0; i < input.length; i++) {
     // 6.Bonus : à la place de indexOf, écrire une seconde boucle pour trouver l'index de la voyelle recherchée
     for ( let j = 0; j < vowels.length; j++) {
         if (input[i] === vowels[j]) {
+            // 7.Si la lettre est une voyelle, utiliser la méthode .push() sur le tableau resultArray afin d'y ajouter la lettre courante input[i]
             resultArray.push(vowels[j]);
             console.log(resultArray);
+
+            // 8.En affichant la valeur de resultArray, on observe qu'il y a des virgules entre chaque élément. Utiliser les méthodes join() et toUpperCase() pour un bon formatage.
+            // resultArray.join().toUpperCase();
+            console.log(resultArray.join().toUpperCase());
         }
     }
 }
