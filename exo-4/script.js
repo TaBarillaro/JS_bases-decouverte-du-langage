@@ -12,4 +12,7 @@ console.log(secretMessage);
 secretMessage.push('to', 'program');
 console.log(secretMessage);
 
+// 3.Changer le mot 'easily' par 'right' en accédant au bon index du tableau
+secretMessage[6] = 'right';
+console.log(secretMessage);
 
