@@ -20,3 +20,7 @@ console.log(secretMessage);
 secretMessage.shift();
 console.log(secretMessage);
 
+// 5.Utiliser une méthode pour ajouter la chaine "Programming" en début de tableau
+secretMessage.unshift('Programming');
+console.log(secretMessage);
+
