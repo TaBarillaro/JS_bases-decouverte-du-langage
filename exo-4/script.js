@@ -16,3 +16,7 @@ console.log(secretMessage);
 secretMessage[6] = 'right';
 console.log(secretMessage);
 
+// 4.Utiliser une méthode pour supprimer le premier élément du tableau
+secretMessage.shift();
+console.log(secretMessage);
+
