@@ -12,7 +12,7 @@ playerInput = playerInput.toLowerCase();
 function getPlayerChoice(playerInput) {
     
     // 4.condition pour vérifier le choix du joueur
-    if (playerInput === "rock" || playerInput === "paper" || playerInput === "scissors") {
+    if (playerInput === "rock" || playerInput === "paper" || playerInput === "scissors" || playerInput === 'bomb') {
         console.log('playerInput : ' + playerInput);
         return playerInput;
     } else {
