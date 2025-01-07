@@ -14,19 +14,30 @@ let resultArray = [];
 // 4.Essayons maintenant de trouver toutes les voyelles dans notre chaine initiale.
 //   Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caractères. 
 //   À l'intérieur de cette boucle, afficher la lettre courante dans la console.
-// resultArray = input.split('');
-// console.log(str);
 
-for ( let i = 0; i < input.length; i ++) {
-    resultArray = input[i];
+for (let i = 0; i < input.length; i++) {
+    resultArray1 = input[i];
     console.log(input[i]);
+    console.log(resultArray);
 
-    // 5. Maintenant nous devons vérifier si la lettre courante est une voyelle, utiliser la méthode indexOf des tableaux pour le faire.
-    if (vowels.indexOf(resultArray) !== -1) {
-        console.log('is a vowel');
-    } else {
-        console.log('is not a vowel!');
+    // 5.Maintenant nous devons vérifier si la lettre courante est une voyelle, utiliser la méthode indexOf des tableaux pour le faire.
+    // if (vowels.indexOf(resultArray) !== -1) {
+    //     console.log('is a vowel');
+    // } else {
+    //     console.log('is not a vowel!');
+    // }
+
+    // 6.Bonus : à la place de indexOf, écrire une seconde boucle pour trouver l'index de la voyelle recherchée
+    for ( let j = 0; j < vowels.length; j++) {
+        if (input[i] === vowels[j]) {
+            resultArray.push(vowels[j]);
+            console.log(resultArray);
+        }
     }
 }
+
+
+
+
 
 
