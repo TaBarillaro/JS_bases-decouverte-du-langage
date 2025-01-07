@@ -61,12 +61,14 @@ function findWinner(playerChoice, computerChoice) {
         } else {
             return 'Lost';
         }
+    } else if (playerChoice === 'bomb') {
+        return 'Won';
     }
 }
 
 // 11. Fonction pour jouer
 function playGame() {
-    let uChoice = getPlayerChoice('scissors');
+    let uChoice = getPlayerChoice(playerInput);
     let computerChoice = getComputerChoice();
     console.log('uChoice : ' + uChoice);
     console.log('computerChoice : ' + computerChoice);
