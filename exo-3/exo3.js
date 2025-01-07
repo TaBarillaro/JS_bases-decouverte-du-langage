@@ -71,6 +71,7 @@ function playGame() {
     console.log('uChoice : ' + uChoice);
     console.log('computerChoice : ' + computerChoice);
 
+    // 12. j'appelle la fonction findWinner pour voir le vainqueur
     findWinner(uChoice, computerChoice);
     console.log(findWinner(uChoice, computerChoice));
 } 
