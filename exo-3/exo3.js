@@ -1,29 +1,28 @@
 // you can write js here
 console.log('exo-3');
-const message = getElementById('message');
 
 // 1.Je crée une variable que contient la question à afficher
-var playerInput = prompt("Your choice ( rock, paper, scissors) ?");
+let playerInput = prompt("Your choice ( rock, paper, scissors) ?");
+// console.log('playerInput : ' + playerInput);
+
+// 3.je transform la variable pour l'avoir en minuscule
+playerInput = playerInput.toLowerCase();
 
 // 2.Je crée la fonction pour faire jouer le joueur
 function getPlayerChoice(playerInput) {
-    // 3.je transform la variable pour l'avoir en minuscule
-    playerInput.toLowerCase();
-
+    
     // 4.condition pour vérifier le choix du joueur
-    let playerChoise;
-    if (playerChoise === "rock" || playerChoise === "paper" || playerChoise === "scissors") {
+    if (playerInput === "rock" || playerInput === "paper" || playerInput === "scissors") {
+        console.log('playerInput : ' + playerInput);
         return playerInput;
     } else {
         console.log('Error: You must choice between rock, paper or scissors');
     }
 }
-// getPlayerChoice();
 
 // 5. Fonction pour le choix de l'ordinateur
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 2);
-    // return computerChoice;
 
     if (computerChoice === 0) {
         computerChoice = "rock";
@@ -35,29 +34,28 @@ function getComputerChoice() {
 
     return computerChoice;
 }
-// getComputerChoice();
 
-// 6. Fnction pour determiner le gagnant
-function findWinner(playerChoise, computerChoice) {
+// 6. Fonction pour determiner le gagnant
+function findWinner(playerChoice, computerChoice) {
     // 7. Cas d'égalité
-    if (playerChoise === computerChoice) {
+    if (playerChoice === computerChoice) {
         return "Tied";
         // 8. condition pour vérifier qui a gagné si l'utilisateur à choisi rock
-    } else if (playerChoise === 'rock') {
+    } else if (playerChoice === 'rock') {
         if (computerChoice === 'scissors') {
             return 'Won';
         } else {
             return 'Lost';
         }
         // 9. condition pour vérifier qui a gagné si l'utilisateur à choisi paper
-    } else if (playerChoise === 'paper') {
+    } else if (playerChoice === 'paper') {
         if (computerChoice === 'rock') {
             return 'Won';
         } else {
             return 'Lost';
         }
-        // 10. condition pour vérifier qui a gagné si l'utilisateur à choisi paper
-    } else if (playerChoise === 'scissors') {
+        // 10. condition pour vérifier qui a gagné si l'utilisateur à choisi scissors
+    } else if (playerChoice === 'scissors') {
         if (computerChoice === 'paper') {
             return 'Won';
         } else {
@@ -65,5 +63,17 @@ function findWinner(playerChoise, computerChoice) {
         }
     }
 }
+
+// 11. Fonction pour jouer
+function playGame() {
+    let uChoice = getPlayerChoice('scissors');
+    let computerChoice = getComputerChoice();
+    console.log('uChoice : ' + uChoice);
+    console.log('computerChoice : ' + computerChoice);
+
+    findWinner(uChoice, computerChoice);
+    console.log(findWinner(uChoice, computerChoice));
+} 
+playGame();
 
 
