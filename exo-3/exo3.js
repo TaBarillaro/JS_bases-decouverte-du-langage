@@ -37,6 +37,33 @@ function getComputerChoice() {
 }
 // getComputerChoice();
 
-
+// 6. Fnction pour determiner le gagnant
+function findWinner(playerChoise, computerChoice) {
+    // 7. Cas d'égalité
+    if (playerChoise === computerChoice) {
+        return "Tied";
+        // 8. condition pour vérifier qui a gagné si l'utilisateur à choisi rock
+    } else if (playerChoise === 'rock') {
+        if (computerChoice === 'scissors') {
+            return 'Won';
+        } else {
+            return 'Lost';
+        }
+        // 9. condition pour vérifier qui a gagné si l'utilisateur à choisi paper
+    } else if (playerChoise === 'paper') {
+        if (computerChoice === 'rock') {
+            return 'Won';
+        } else {
+            return 'Lost';
+        }
+        // 10. condition pour vérifier qui a gagné si l'utilisateur à choisi paper
+    } else if (playerChoise === 'scissors') {
+        if (computerChoice === 'paper') {
+            return 'Won';
+        } else {
+            return 'Lost';
+        }
+    }
+}
 
 
