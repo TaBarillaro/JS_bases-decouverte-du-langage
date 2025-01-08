@@ -61,3 +61,13 @@ function addGames(opponent, teamPoints, opponentPoints) {
 addGames('Gingers', 30, 45);
 addGames('Guests', 50, 22);
 console.log(team.games);
+
+
+// Ex. 6.10 Calculer la somme des points de votre équipe sur tous les matchs joués
+// let oursPoints = [];
+// oursPoints = team.games.teamPoints;
+function totalOursPoints() {
+    return team.games.reduce((total, games) => total + games.teamPoints, 0);
+}
+console.log(totalOursPoints());
+
