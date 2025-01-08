@@ -20,3 +20,29 @@ console.log(joeInfo.bathrooms);
 // 3. Joe vient d'acquérir un garage. Afficher cette nouvelle information. 
 joeInfo.garage = true;
 console.log(joeInfo.garage);
+
+
+// Ex 6.2, 6.3, 6.4, 6.5
+let team = {
+    players: [
+        {
+            firstname: 'john',
+            lastname: 'Doe',
+            age: 71
+        },
+        {
+            firstname: 'Teo',
+            lastname: 'Tio',
+            age: 19
+        }
+    ],
+    games: [
+        {
+            opponent: "Broncos",
+            teamPoints: 42,
+            opponentPoints: 27
+        }
+    ]
+};
+console.log(team.players);
+console.log(team.games);
