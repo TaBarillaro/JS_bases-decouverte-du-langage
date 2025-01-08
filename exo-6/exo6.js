@@ -53,3 +53,11 @@ function addPlayer(firstname, lastname, age) {
 }
 addPlayer('Nicole', 'Ra', '15');
 console.log(team.players);
+
+// Ex. 6.8, 6.9
+function addGames(opponent, teamPoints, opponentPoints) {
+    team.games.push({opponent, teamPoints, opponentPoints});
+}
+addGames('Gingers', 30, 45);
+addGames('Guests', 50, 22);
+console.log(team.games);
