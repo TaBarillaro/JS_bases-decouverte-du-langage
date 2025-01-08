@@ -18,3 +18,5 @@ joeInfo.bathrooms = 1;
 console.log(joeInfo.bathrooms);
 
 // 3. Joe vient d'acquérir un garage. Afficher cette nouvelle information. 
+joeInfo.garage = true;
+console.log(joeInfo.garage);
