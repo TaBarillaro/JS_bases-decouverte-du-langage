@@ -26,7 +26,7 @@ console.log(joeInfo.garage);
 let team = {
     players: [
         {
-            firstname: 'john',
+            firstname: 'John',
             lastname: 'Doe',
             age: 71
         },
@@ -92,3 +92,20 @@ function findOldestPlayer() {
 }
 findOldestPlayer();
 console.log(findOldestPlayer());
+
+// Ex. 6.13 Bonus : Trier les joueurs par ordre alphabétique
+function alphabeticalOrder() {
+    console.log(team.players);
+    team.players.sort(function(player1, player2) {
+        if(player1.firstname < player2.firstname) {
+            return -1;
+        } else if (player1.firstname > player2.firstname) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+    return team.players;
+}
+alphabeticalOrder();
+console.log(alphabeticalOrder());
