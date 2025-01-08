@@ -71,3 +71,10 @@ function totalOursPoints() {
 }
 console.log(totalOursPoints());
 
+// Ex. 6.11 Calculer la moyenne des points de l'équipe adverse sur tous les matchs.
+function calculAverageOppositeTeam() {
+    
+    let totalOpponentsPoints = team.games.reduce((total, games) => total + games.opponentPoints, 0);
+    return totalOpponentsPoints / team.games.length;
+}
+console.log(calculAverageOppositeTeam());
