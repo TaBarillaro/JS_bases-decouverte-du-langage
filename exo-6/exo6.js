@@ -46,3 +46,10 @@ let team = {
 };
 console.log(team.players);
 console.log(team.games);
+
+//  Ex. 6.6, 6.7
+function addPlayer(firstname, lastname, age) {
+    team.players.push({firstname, lastname, age});
+}
+addPlayer('Nicole', 'Ra', '15');
+console.log(team.players);
