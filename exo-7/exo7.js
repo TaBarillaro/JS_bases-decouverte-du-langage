@@ -16,3 +16,17 @@ jsonDatas.forEach((item) => {
     item.translation = translationOfType[item.type];
 });
 console.log(jsonDatas);
+
+// 4 Créer une page HTML et lister les articles depuis la donnée
+// function fetchData() {
+//     fetch('datas.js')
+//     .then((res) => res.json())
+//     .then((data) => {
+//         console.log(data)
+//     })
+//     .catch((error) => {
+//         console.log(`Error Fetching data : ${error}`)
+//         document.getElementById('list').innerHTML = 'Error Loading Data'
+//     })
+// }
+// fetchData();
