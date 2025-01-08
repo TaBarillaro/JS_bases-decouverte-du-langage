@@ -78,3 +78,17 @@ function calculAverageOppositeTeam() {
     return totalOpponentsPoints / team.games.length;
 }
 console.log(calculAverageOppositeTeam());
+
+// Ex 6.12 Écrire une fonction qui permet de trouver le joueur le plus âgé
+function findOldestPlayer() {
+    let oldestPlayer = team.players[0];
+    // console.log(oldestPlayer);
+    for (let i = 0; i < team.players.length; i++) {
+        if (team.players[i].age > oldestPlayer) {
+            oldestPlayer = team.players[i];
+        } 
+    }
+    return oldestPlayer;
+}
+findOldestPlayer();
+console.log(findOldestPlayer());
