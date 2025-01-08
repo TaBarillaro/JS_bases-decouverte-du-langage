@@ -14,5 +14,7 @@ var joeInfo = {
 console.log(joeInfo.cars.length);
 
 // 2. Changer le nombre de salles de bains de Joe : il n'en possède qu'une. Afficher le nouveau nombre de salles de bain.
+joeInfo.bathrooms = 1;
+console.log(joeInfo.bathrooms);
 
 // 3. Joe vient d'acquérir un garage. Afficher cette nouvelle information. 
